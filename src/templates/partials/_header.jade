@@ -1,4 +1,35 @@
 //BEGIN header
 header.header
-  p Hello from jade/partials/_header
+  .logo
+    a(href="#")
+      img(src="img/logo.png", alt="logo.png")
+  ul.main-menu
+    li.main-menu__item
+      a(href="#").main-menu__link Men
+        span.icon-caret
+    li.main-menu__item
+      a(href="#").main-menu__link Women
+        span.icon-caret
+    li.main-menu__item
+      a(href="#").main-menu__link Kids
+        span.icon-caret
+    li.main-menu__item
+      a(href="#").main-menu__link Accessories
+        span.icon-caret
+    li.main-menu__item
+      a(href="#").main-menu__link Sale
+    li.main-menu__item
+      a(href="#").main-menu__link LookBook
+    li.main-menu__item
+      a(href="#").main-menu__link Blog
+
+  .search
+    form(action="#")
+      input(type="text").form-control.search__input
+      input(type="submit" value="").search__button
+
+  .location
+    a(href="#").location__link Uzbekistan / $
+
+  
 //END header
