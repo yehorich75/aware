@@ -1,25 +1,115 @@
 // Header
 
+@import icomoon
+
 .header
 	height: 80px
 	background-color: #fff
 	display: flex
 	align-items: center
 	justify-content: space-between
-	padding: 030px
+	padding: 0 30px
+	border-bottom: 1px solid #ececec
+
+.logo
+	margin-right: 40px
 
 .main-menu
+	margin-right: 70px
 	list-style: none
 	display: flex
 	&__item
 		position: relative
+		&:hover
+			.dropdown-content
+				opacity: 1
+				margin-top: 0
+				left: -10px
+				visibility: visible
 	&__link
 		color: $color
 		font-size: 14px
-		outline: 1px solid red
 		display: block
 		padding: 0 20px
+		line-height: 80px
 		[class*="icon"]
-			font-size: 8px
+			font-size: 6px
 			color: $color-blue
+			padding: 0 0 0 10px
+
+.dropdown-content
+	position: absolute
+	width: 240px
+	background-color: $color
+	padding: 30px
+	color: #ffffff
+	top: 100%
+	left: -10000px
+	visibility: hidden
+	opacity: 0
+	margin-top: 30px
+	transition: opacity 0.3s, margin-top 0.5s
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		+arr(14, 7, $color, t)
+		bottom: 100%
+
+.dropdown-menu
+	list-style: none
+	&__item
+		margin-bottom: 8px
+	&__link
+		font-size: 12px
+		color: rgba(255, 255, 255, 0.702)
+		line-height: 16px
+		&:hover
+			color: #ffffff
+
+.search
+	position: relative
+	flex: 1
+	margin-right: 50px
+	&__input
+		width: 100%
+		height: 30px
+		font-size: 12px
+		font-family: "PTSerif"
+		color: $color
+		background-color: #f6f6f6
+		padding: 0 40px 0 20px
+		border: none
+		border-radius: 20px
+		+placeholder
+			color: rgb(134, 134, 134)
+			font-style: italic
+
+	&__button
+		position: absolute
+		top: 7px
+		right: 12px
+		font-family: 'icomoon' !important
+		background-color: transparent
+		border: none
+
+.location
+	&__link
+		color: rgb(134, 134, 134)
+		font-size: 12px
+	[class*="icon"]
+		font-size: 18px
+		margin-right: 5px
+		color: $color
+
+
+
+
+
+
+
+
+
+
+
 
