@@ -9,38 +9,21 @@ header.header
         span.icon-caret
       .dropdown-content
         ul.dropdown-menu
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Bags
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Caps & Hats
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Gifts
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Grooming
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Hoodies & Sweatshirts
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Jackets & Coats
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Jeans
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Jewellery
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Joggers
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Jumpers & Cardigans
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Leather Jackets
+          each val in ["Bags", "Caps & Hats", "Gifts", "Grooming", "Hoodies & Sweatshirts", "Jackets & Coats", "Jeans", "Jewellery", "Joggers", "Jumpers & Cardigans", "Leather Jackets"]
+            li.dropdown-menu__item
+              a(href="#").dropdown-menu__link= val
+
           li.dropdown-menu__item
             a(href="#").dropdown-menu__link Long Sleeve T-Shirts
           li.dropdown-menu__item
             a(href="#").dropdown-menu__link Loungewear
           li.dropdown-menu__item
-            a(href="#").dropdown-menu__link  Polo Shirts
+            a(href="#").dropdown-menu__link  PShirtsolo 
           li.dropdown-menu__item
             a(href="#").dropdown-menu__link Sunglasses
           li.dropdown-menu__item
             a(href="#").dropdown-menu__link Swimwear
+           
     li.main-menu__item
       a(href="#").main-menu__link Women
         span.icon-caret
