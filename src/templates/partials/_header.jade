@@ -5,42 +5,25 @@ header.header
       img(src="img/logo.png", alt="logo.png")
   ul.main-menu
     li.main-menu__item
+      +link('/Men', 'Men')(class="main-menu__link")
+    li.main-menu__item
       a(href="#").main-menu__link Men
         span.icon-caret
       .dropdown-content
         ul.dropdown-menu
-          each val in ["Bags", "Caps & Hats", "Gifts", "Grooming", "Hoodies & Sweatshirts", "Jackets & Coats", "Jeans", "Jewellery", "Joggers", "Jumpers & Cardigans", "Leather Jackets"]
+          each val in ["Bags", "Caps & Hats", "Gifts", "Grooming", "Hoodies & Sweatshirts", "Jackets & Coats", "Jeans", "Jewellery", "Joggers", "Jumpers & Cardigans", "Leather Jackets", "Long Sleeve T-Shirts", "Loungewear", "PShirtsolo", "Sunglasses", "Swimwear"]
             li.dropdown-menu__item
               a(href="#").dropdown-menu__link= val
-
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Long Sleeve T-Shirts
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Loungewear
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link  PShirtsolo 
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Sunglasses
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Swimwear
            
     li.main-menu__item
       a(href="#").main-menu__link Women
         span.icon-caret
       .dropdown-content
         ul.dropdown-menu
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Shirts
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Shoes, Boots & Train
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Shorts
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Suits & Blazers
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Sunglasses
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Swimwear
+          each val in ["Shirts", "Caps & Hats", "Gifts", "Grooming", "Hoodies & Sweatshirts", "Jackets & Coats", "Jeans", "Jewellery", "Joggers", "Jumpers & Cardigans", "Leather Jackets", "Long Sleeve T-Shirts", "Loungewear", "PShirtsolo", "Sunglasses", "Swimwear"]
+              li.dropdown-menu__item
+                a(href="#").dropdown-menu__link= val
+
     li.main-menu__item
       a(href="#").main-menu__link Kids
         span.icon-caret
