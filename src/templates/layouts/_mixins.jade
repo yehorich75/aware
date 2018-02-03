@@ -11,7 +11,7 @@ mixin icon(name, modClass)
 mixin link(href, name)
   a(href=href)&attributes(attributes)= name
 
-mixin dropdown (itemName)
+mixin dropdown(itemName)
   .dropdown-content
     ul.dropdown-menu
       each name in itemName
