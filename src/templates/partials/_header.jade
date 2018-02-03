@@ -6,62 +6,27 @@ header.header
   ul.main-menu
     li.main-menu__item
       +link('/Men', 'Men')(class="main-menu__link")
+
     li.main-menu__item
       a(href="#").main-menu__link Men
         span.icon-caret
-      .dropdown-content
-        ul.dropdown-menu
-          each val in ["Bags", "Caps & Hats", "Gifts", "Grooming", "Hoodies & Sweatshirts", "Jackets & Coats", "Jeans", "Jewellery", "Joggers", "Jumpers & Cardigans", "Leather Jackets", "Long Sleeve T-Shirts", "Loungewear", "PShirtsolo", "Sunglasses", "Swimwear"]
-            li.dropdown-menu__item
-              a(href="#").dropdown-menu__link= val
+      +dropdown(["Bags", "Caps & Hats", "Gifts", "Grooming", "Hoodies & Sweatshirts", "Jackets & Coats", "Jeans", "Jewellery"])
            
     li.main-menu__item
       a(href="#").main-menu__link Women
         span.icon-caret
-      .dropdown-content
-        ul.dropdown-menu
-          each val in ["Shirts", "Caps & Hats", "Gifts", "Grooming", "Hoodies & Sweatshirts", "Jackets & Coats", "Jeans", "Jewellery", "Joggers", "Jumpers & Cardigans", "Leather Jackets", "Long Sleeve T-Shirts", "Loungewear", "PShirtsolo", "Sunglasses", "Swimwear"]
-              li.dropdown-menu__item
-                a(href="#").dropdown-menu__link= val
+      +dropdown(["Shirts", "Caps & Hats", "Gifts", "Grooming", "Hoodies & Sweatshirts", "Jackets & Coats", "Jeans", "Jewellery", "Joggers"])
 
     li.main-menu__item
       a(href="#").main-menu__link Kids
         span.icon-caret
-      .dropdown-content
-        ul.dropdown-menu
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link New Arrivals
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Dresses
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Tops
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Sweaters & Knits
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Jackets & Coats
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link Rompers & Jumpsuits
+      +dropdown(["New Arrivals", "Dresses", "Tops", "Sweaters & Knits", "Jackets & Coats", "Rompers & Jumpsuits"])
+
     li.main-menu__item
       a(href="#").main-menu__link Accessories
         span.icon-caret
-      .dropdown-content
-        ul.dropdown-menu
-          li.dropdown-menu__item
-            a(href="#").dropdown-menu__link
-            li.dropdown-menu__item
-              a(href="#").dropdown-menu__link Hair Accessories
-            li.dropdown-menu__item
-              a(href="#").dropdown-menu__link Sunglasses & Readers
-            li.dropdown-menu__item
-              a(href="#").dropdown-menu__link Socks & Tights
-            li.dropdown-menu__item
-              a(href="#").dropdown-menu__link Hats
-            li.dropdown-menu__item
-              a(href="#").dropdown-menu__link Scarves & Gloves
-            li.dropdown-menu__item
-              a(href="#").dropdown-menu__link Jackets & Coats
-            li.dropdown-menu__item
-              a(href="#").dropdown-menu__link Rompers & Jumpsuits
+      +dropdown(["Hair Accessories", "Sunglasses & Readers", "Socks & Tights", "Hats", "Jackets & Coats", "Scarves & Gloves", "Jackets & Coats", "Rompers & Jumpsuits"])
+ 
     li.main-menu__item
       a(href="#").main-menu__link Sale
     li.main-menu__item
