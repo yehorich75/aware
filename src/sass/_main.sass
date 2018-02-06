@@ -220,8 +220,19 @@
 				display: inline-block
 				max-width: 100%
 		&__info
+			flex: 1
 			.product__title
 				margin-bottom: 10px
+		&__details
+			display: flex
+			align-items: center
+			justify-content: space-between
+			.price
+				margin-right: 10px
+		&__delete
+			padding: 0 10px 0 0
+			margin-left: 20px
+			flex: none
 
 .price
 	color: $color
@@ -247,7 +258,21 @@
 		font-style: italic
 		line-height: 18px
 
+.container
+	width: 1170px
+	max-width: 100%
+	margin: 0 auto 
 
+.grid
+	display: grid
+	grid-template-columns: repeat(3,1fr)
+	grid-gap: 20px
+	grid-auto-rows: minmax(50px, auto)
+	div 
+		background-color: #28314e
+		padding: 20px
+		color: #ffffff
+		font-size: 18px
 
 
 
