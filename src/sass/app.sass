@@ -13,6 +13,7 @@ $font-family-2: Oswald
 $font-family-3: PT Serif, sans-serif
 $color: #222222
 $color-blue: rgb(31, 75, 165)
+$color-danger: #ff34a5
 
 
 body 	
@@ -68,6 +69,21 @@ span
 // @each $i in next, prev
 // 	.ic--#{$i}
 // 		+s(ic--#{$i})
+
+// Buttons
+
+.btn
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	color: #ffffff
+	background-color: $color-blue
+	height: 30px
+	border-radius: 20px
+	padding: 0 25px
+	font-family: $font-family, Arial, sans-serif
+	font-size: 12px
+	font-weight: 400
 
 @import main
 

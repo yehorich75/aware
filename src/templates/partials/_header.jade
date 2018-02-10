@@ -69,12 +69,57 @@ header.header
                     span Black
                     |  • 
                     span 1 pcs
-                .cart-list__delete
-                  a(href="#").js-remove-cart
-                    span.icon-close
-                      span.path1
-                      span.path2
+              .cart-list__delete
+                a(href="#").js-remove-cart
+                  span.icon-close
+                    span.path1
+                    span.path2
 
+            li.cart-list__item
+              .cart-list__img
+                a(href="#")
+                  img(src="img/cart-list-img.png", alt="cart-list-img.png")
+              .cart-list__info
+                h6.product__title
+                  a(href="#") Lyle & Scott Men's Short Sleeve Camo Pocket
+                .cart-list__details
+                  span.price.price--danger $85  
+                  span.product__details
+                    span XXL
+                    |  • 
+                    span White
+                    |  • 
+                    span 3 pcs
+              .cart-list__delete
+                a(href="#").js-remove-cart
+                  span.icon-close
+                    span.path1
+                    span.path2
+
+            li.cart-list__item
+              .cart-list__img
+                a(href="#")
+                  img(src="img/cart-list-img.png", alt="cart-list-img.png")
+              .cart-list__info
+                h6.product__title
+                  a(href="#") Lyle & Scott Men's Short Sleeve Camo Pocket
+                .cart-list__details
+                  span.price $1285 
+                  span.product__details
+                    span M
+                    |  • 
+                    span Orange
+                    |  • 
+                    span 89 pcs
+              .cart-list__delete
+                a(href="#").js-remove-cart
+                  span.icon-close
+                    span.path1
+                    span.path2
+          .cart-footer
+            span.total Total
+            span.price $3285
+            a(href="#").btn Check Out
     li.profile-menu__item.dropdown.dropdown--right.dropdown--white
       a(href="#").profile-menu__link
         span.icon-user
@@ -102,16 +147,7 @@ header.header
               span.icon-power
               | Log out
       //- +dropdown(["Bags", "Caps & Hats", "Gifts", "Grooming"])
-.container
-  .grid
-    div Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit iure error temporibus ratione impedit sequi suscipit consectetur aperiam perferendis aspernatur?
-    div item-2
-    div item-3
-    div item-4
-    div item-5
-    div item-6
-    div item-7
-    div item-8
-    div item-9
+
+
   
 //END header

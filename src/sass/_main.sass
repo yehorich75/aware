@@ -233,13 +233,38 @@
 			padding: 0 10px 0 0
 			margin-left: 20px
 			flex: none
-
+			color: #b6b6b6
+			font-size: 12px
+			a 
+				color: inherit
+				&:hover
+					color: $color
+	&-footer
+		display: flex
+		align-items: center
+		padding: 20px 10px
+		.total
+			width: 60px
+			flex: none
+			margin-right: 20px
+			text-align: right
+		.price
+			margin-right: 28px
 .price
 	color: $color
 	font-family: $font-family-2
 	font-size: 12px
 	font-weight: 700
 	letter-spacing: 1.2px
+	&--danger
+		color: $color-danger
+
+.total
+	color: #b8b8b8
+	font-family: $font-family-3
+	font-size: 12px
+	font-style: italic
+	line-height: 18px	
 
 .product
 	&__title
@@ -256,23 +281,9 @@
 		font-family: $font-family-3
 		font-size: 12px
 		font-style: italic
-		line-height: 18px
 
-.container
-	width: 1170px
-	max-width: 100%
-	margin: 0 auto 
 
-.grid
-	display: grid
-	grid-template-columns: repeat(3,1fr)
-	grid-gap: 20px
-	grid-auto-rows: minmax(50px, auto)
-	div 
-		background-color: #28314e
-		padding: 20px
-		color: #ffffff
-		font-size: 18px
+
 
 
 
